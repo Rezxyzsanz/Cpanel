@@ -4,15 +4,15 @@ function sendEmail(email, user, password, server) {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'kiicodeofficial@gmail.com',
-            pass: 'dbkzzhgtfrgrtonh'
+            user: 'wawe99634@gmail.com',
+            pass: 'qqfahqrzrvitrmoy'
         }
     });
 
     let mailOptions = {
-        from: 'kiicodeofficial@gmail.com',
+        from: 'wawe99634@gmail.com',
         to: email,
-        subject: 'Account and Server Details',
+        subject: 'DATA PANEL ANDA',
         html: `
             <h3>Hi ${user.username},</h3>
             <p>Your account and server have been successfully created. Here are the details:</p>
