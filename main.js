@@ -10,14 +10,14 @@ app.use(express.json());
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
-const domain = "https://panel.elxyz.me";
+const domain = "";
 const apikey = "";
 const egg = "15";
 const location = "1";
-const codeqr = ""
-const merchant = ""
-const keyorkut = ""
-const elxyz = ""
+const codeqr = "00020101021126670016COM.NOBUBANK.WWW01189360050300000879140214355408219697190303UMI51440014ID.CO.QRIS.WWW0215ID20232679713720303UMI5204481253033605802ID5915ALMER OK11936836006KEDIRI61056411162070703A01630476E3"
+const merchant = "OK1193683"
+const keyorkut = "951096517289910871193683OKCT435AAED33CE20F14403F6059A4FD4168"
+const elxyz = "KC-018ba8b52541c9a0"
 
 function getProducts() {
     const data = fs.readFileSync('produce.json');
@@ -260,15 +260,15 @@ function sendEmail(email, user, password, server) {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'kiicodeofficial@gmail.com',
-            pass: 'dbkzzhgtfrgrtonh'
+            user: 'wawe99634@gmail.com',
+            pass: 'qqfahqrzrvitrmoy'
         }
     });
 
     let mailOptions = {
-        from: 'kiicodeofficial@gmail.com',
+        from: 'wawe99634@gmail.com',
         to: email,
-        subject: 'Account and Server Details',
+        subject: 'DATA PANEL ANDA',
         html: `
             <h3>Hi ${user.username},</h3>
             <p>Your account and server have been successfully created. Here are the details:</p>
@@ -316,3 +316,5 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
+
+
