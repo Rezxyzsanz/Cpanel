@@ -5,6 +5,7 @@ const nodemailer = require('nodemailer');
 const fetch = require('node-fetch');
 const fs = require('fs');
 const path = require('path');
+const data = fs.readFileSync(path.join(__dirname, 'produce.json'), 'utf8');
 const app = express();
 app.use(express.json());
 app.set('view engine', 'ejs');
